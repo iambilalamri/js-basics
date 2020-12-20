@@ -69,3 +69,24 @@ const items = filtered.map((elem) => "<li>" + elem + "</li>");
 console.log(filtered);
 console.log(items);
 console.log(items.join());
+
+//*******************************************/
+
+// let sum = 0;
+// for (let n of numbers) sum += n;
+// console.log(sum);
+
+const sum = numbers.reduce(
+  (accumulator, currentValue) => accumulator + currentValue,
+  0
+);
+console.log("sum=", sum);
+
+//*******************************************/
+
+let initialValue = 0
+let sum = [{x: 1}, {x: 2}, {x: 3}].reduce(function (accumulator, currentValue) {
+    return accumulator + currentValue.x
+}, initialValue)
+
+console.log(sum) // logs 6

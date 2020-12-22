@@ -36,3 +36,7 @@ b = c;
 
 console.log("a", a);
 console.log("b", b);
+
+var elem1 = 4;
+var elem1 = 6; 
+console.log(elem1); // 6
